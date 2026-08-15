@@ -1,668 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="RN - Rejoice Nnachi | Web Developer, E-commerce Specialist, Data Entry and PowerPoint Designer">
+    <title>CookWise - Learn to Cook</title>
 
-    <title>RN | Rejoice Nnachi</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-    <!-- ================================
-         HEADER / NAVIGATION
-    ================================= -->
+    <!-- HEADER -->
 
-    <header class="header">
+    <header>
 
-        <nav class="navbar">
+        <div class="logo">
+            🍳 CookWise
+        </div>
 
-            <a href="index.html" class="logo">
-                <img src="images/logo.png"
-                     alt="RN - Rejoice Nnachi">
-            </a>
+        <button
+            class="menu-btn"
+            onclick="showMessage()">
 
-            <ul class="nav-links">
+            ☰
 
-                <li>
-                    <a href="index.html" class="active">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="projects.html">
-                        Projects
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-            <a href="contact.html"
-               class="nav-button">
-                Hire Me →
-            </a>
-            <button class="menu-btn"
-        aria-label="Open Menu"
-        onclick="document.querySelector('.nav-links').classList.toggle('show-menu')">
-    ☰
-</button>
-
-        </nav>
+        </button>
 
     </header>
 
 
-    <!-- ================================
-         HERO SECTION
-    ================================= -->
+    <!-- WELCOME -->
 
-    <main>
+    <section class="welcome">
 
-        <section class="hero home-hero">
-
-            <div class="hero-content">
-
-        <div class="availability-badge">
-    <span class="availability-dot"></span>
-    Available for Work
-</div>
-
-                <p class="welcome">
-                    HELLO, I'M
-                </p>
-                <h1>
-                    Rejoice
-                    <span>Nnachi</span>
-                </h1>
-
-                <h2>
-                    Web Developer |
-                    E-commerce Specialist |
-                    Data Entry |
-                    PPT Designer
-                </h2>
-
-                <p class="hero-text">
-                    I create modern websites, online stores,
-                    professional presentations and organized
-                    digital solutions that help individuals
-                    and businesses stand out.
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a href="projects.html"
-                       class="btn primary-btn">
-                        View My Work →
-                    </a>
-
-                    <a href="contact.html"
-                       class="btn secondary-btn">
-                        Contact Me
-                    </a>
-
-                </div>
-
-
-                <!-- Social Links -->
-                 <a href="https://www.linkedin.com/"
-   target="_blank"
-   rel="noopener noreferrer"
-   aria-label="LinkedIn">
-    in
-</a>
-
-<a href="#"
-   aria-label="WhatsApp">
-    W
-</a>
-
-<a href="https://github.com/"
-   target="_blank"
-   rel="noopener noreferrer"
-   aria-label="GitHub">
-    GH
-</a>
-
-<a href="contact.html"
-   aria-label="Email">
-    @
-</a>
-            </div>
-
-
-<!-- ========================================
-     PORTFOLIO SLIDESHOW
-======================================== -->
-
-<section class="portfolio-showcase">
-
-    <div class="showcase-heading">
-
-        <p class="welcome">
-            MY WORK
+        <p class="welcome-small">
+            👋 Welcome to CookWise
         </p>
 
-        <h2>
-            What I <span>Create</span>
-        </h2>
+        <h1>
+            Learn to cook
+            <br>
+            delicious meals 🍳
+        </h1>
 
         <p>
-            A glimpse of the digital services I provide.
+            Discover simple recipes and learn how to
+            prepare delicious meals step by step.
         </p>
 
-    </div>
 
+        <!-- SEARCH -->
 
-    <div class="slideshow">
+        <div class="search-box">
 
-        <!-- SLIDE 1 -->
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a recipe...">
 
-        <div class="slide active-slide">
+            <button
+                onclick="searchRecipe()">
 
-            <img src="images/web-project.jpg"
-                 alt="Web Development Project">
+                🔍
 
-            <div class="slide-content">
-
-                <span>
-                    01 / 05
-                </span>
-
-                <h3>
-                    Web Development
-                </h3>
-
-                <p>
-                    Responsive and professional websites
-                    built for modern businesses.
-                </p>
-
-                <a href="projects.html"
-                   class="project-link">
-                    View Project →
-                </a>
-
-            </div>
+            </button>
 
         </div>
 
+    </section>
 
-        <!-- SLIDE 2 -->
 
-        <div class="slide">
+    <!-- CATEGORIES -->
 
-            <img src="images/website-project.jpg"
-                 alt="Website Design Project">
+    <section class="section">
 
-            <div class="slide-content">
+        <div class="section-title">
 
-                <span>
-                    02 / 05
-                </span>
+            <h2>
+                Categories
+            </h2>
 
-                <h3>
-                    Website Design
-                </h3>
-
-                <p>
-                    Clean and engaging website experiences
-                    designed around your goals.
-                </p>
-
-                <a href="projects.html"
-                   class="project-link">
-                    View Project →
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- SLIDE 3 -->
-
-        <div class="slide">
-
-            <img src="images/ecommerce-project.jpg"
-                 alt="E-commerce Website Project">
-
-            <div class="slide-content">
-
-                <span>
-                    03 / 05
-                </span>
-
-                <h3>
-                    E-commerce Website
-                </h3>
-
-                <p>
-                    Professional online stores designed
-                    to showcase products.
-                </p>
-
-                <a href="projects.html"
-                   class="project-link">
-                    View Project →
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- SLIDE 4 -->
-
-        <div class="slide">
-
-            <img src="images/data-entry-project.jpg"
-                 alt="Data Entry Project">
-
-            <div class="slide-content">
-
-                <span>
-                    04 / 05
-                </span>
-
-                <h3>
-                    Data Entry
-                </h3>
-
-                <p>
-                    Accurate and organized digital
-                    data management.
-                </p>
-
-                <a href="projects.html"
-                   class="project-link">
-                    View Project →
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- SLIDE 5 -->
-
-        <div class="slide">
-
-            <img src="images/powerpoint-project.jpg"
-                 alt="PowerPoint Design Project">
-
-            <div class="slide-content">
-
-                <span>
-                    05 / 05
-                </span>
-
-                <h3>
-                    PowerPoint Design
-                </h3>
-
-                <p>
-                    Professional presentations designed
-                    to communicate ideas clearly.
-                </p>
-
-                <a href="projects.html"
-                   class="project-link">
-                    View Project →
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- SLIDE BUTTONS -->
-
-        <button class="slide-prev"
-                aria-label="Previous project">
-            ←
-        </button>
-
-        <button class="slide-next"
-                aria-label="Next project">
-            →
-        </button>
-
-
-        <!-- SLIDE DOTS -->
-
-        <div class="slide-dots">
-
-            <button class="dot active-dot"
-                    data-slide="0"></button>
-
-            <button class="dot"
-                    data-slide="1"></button>
-
-            <button class="dot"
-                    data-slide="2"></button>
-
-            <button class="dot"
-                    data-slide="3"></button>
-
-            <button class="dot"
-                    data-slide="4"></button>
-
-        </div>
-
-    </div>
-
-</section>
-
-            <!-- RN BRANDING -->
-
-            <div class="hero-brand">
-
-                <div class="hero-logo-glow">
-
-                    <img src="images/logo.png"
-                         alt="RN Logo">
-
-                </div>
-
-                <p>
-                    CREATE
-                    <span>•</span>
-                    DESIGN
-                    <span>•</span>
-                    ORGANIZE
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================================
-             SERVICES
-        ================================= -->
-
-        <section class="services">
-
-            <div class="section-heading">
-
-                <p>
-                    WHAT I DO
-                </p>
-
-                <h2>
-                    My <span>Services</span>
-                </h2>
-
-                <p class="section-description">
-                    Professional solutions for your digital
-                    and business needs.
-                </p>
-
-            </div>
-
-
-            <div class="service-grid">
-
-
-                <!-- Web Development -->
-
-                <article class="service-card">
-
-                    <div class="service-icon">
-                        &lt;/&gt;
-                    </div>
-
-                    <h3>
-                        Web Development
-                    </h3>
-
-                    <p>
-                        Responsive and functional websites
-                        built with modern web technologies.
-                    </p>
-
-                    <a href="projects.html">
-                        Learn More →
-                    </a>
-
-                </article>
-
-
-                <!-- Website Design -->
-
-                <article class="service-card">
-
-                    <div class="service-icon">
-                        ✦
-                    </div>
-
-                    <h3>
-                        Website Design
-                    </h3>
-
-                    <p>
-                        Clean, modern and user-friendly
-                        website interfaces.
-                    </p>
-
-                    <a href="projects.html">
-                        Learn More →
-                    </a>
-
-                </article>
-
-
-                <!-- E-commerce -->
-
-                <article class="service-card">
-
-                    <div class="service-icon">
-                        🛒
-                    </div>
-
-                    <h3>
-                        E-commerce Websites
-                    </h3>
-
-                    <p>
-                        Online stores with product pages,
-                        shopping features and business-focused
-                        designs.
-                    </p>
-
-                    <a href="projects.html">
-                        Learn More →
-                    </a>
-
-                </article>
-
-
-                <!-- Data Entry -->
-
-                <article class="service-card">
-
-                    <div class="service-icon">
-                        ▤
-                    </div>
-
-                    <h3>
-                        Data Entry
-                    </h3>
-
-                    <p>
-                        Accurate and efficient data entry,
-                        organization and digital record management.
-                    </p>
-
-                    <a href="projects.html">
-                        Learn More →
-                    </a>
-
-                </article>
-
-
-                <!-- PowerPoint -->
-
-                <article class="service-card">
-
-                    <div class="service-icon">
-                        ▣
-                    </div>
-
-                    <h3>
-                        PowerPoint Design
-                    </h3>
-
-                    <p>
-                        Professional and engaging presentations
-                        designed to communicate ideas clearly.
-                    </p>
-
-                    <a href="projects.html">
-                        Learn More →
-                    </a>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================================
-             ABOUT PREVIEW
-        ================================= -->
-
-        <section class="home-about">
-
-            <div class="about-image">
-
-                <div class="about-logo">
-
-                    <img src="images/logo.png"
-                         alt="RN Logo">
-
-                </div>
-
-            </div>
-
-
-            <div class="about-content">
-
-                <p class="welcome">
-                    ABOUT RN
-                </p>
-
-                <h2>
-                    Turning Ideas Into
-                    <span>Digital Solutions</span>
-                </h2>
-
-                <p>
-                    I'm Rejoice Nnachi, also known as RN.
-                    I work across web development, website
-                    design, e-commerce, data entry and
-                    PowerPoint presentation design.
-                </p>
-
-                <p>
-                    My goal is to create work that is
-                    professional, organized, useful and
-                    visually engaging.
-                </p>
-
-                <a href="about.html"
-                   class="btn primary-btn">
-                    More About Me →
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================================
-             CALL TO ACTION
-        ================================= -->
-
-        <section class="cta">
-
-            <div class="cta-content">
-
-                <p>
-                    HAVE A PROJECT IN MIND?
-                </p>
-
-                <h2>
-                    Let's Build Something Amazing!
-                </h2>
-
-                <p>
-                    Your ideas + My skills = Great results.
-                </p>
-
-            </div>
-
-            <a href="contact.html"
-               class="btn primary-btn">
-                Get In Touch →
+            <a href="recipes.html">
+                See all
             </a>
 
-        </section>
-
-    </main>
+        </div>
 
 
-    <!-- ================================
-         FOOTER
-    ================================= -->
+        <div class="categories">
 
-    <footer class="footer">
+            <a
+                href="recipes.html"
+                class="category">
 
-        <div class="footer-brand">
+                🍚
 
-            <img src="images/logo.png"
-            
-                 alt="RN Logo">
+                <span>
+                    Rice
+                </span>
+
+            </a>
+
+
+            <a
+                href="recipes.html"
+                class="category">
+
+                🍗
+
+                <span>
+                    Chicken
+                </span>
+
+            </a>
+
+
+            <a
+                href="recipes.html"
+                class="category">
+
+                🥞
+
+                <span>
+                    Breakfast
+                </span>
+
+            </a>
+
+
+            <a
+                href="recipes.html"
+                class="category">
+
+                🥗
+
+                <span>
+                    Healthy
+                </span>
+
+            </a>
 
         </div>
 
-        <p>
-            © 2026 RN — Rejoice Nnachi.
-            All Rights Reserved.
-        </p>
+    </section>
 
-        <a href="index.html"
-           class="back-top">
-            ↑
+
+    <!-- POPULAR RECIPES -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>
+                Popular Recipes 🔥
+            </h2>
+
+            <a href="recipes.html">
+                See all
+            </a>
+
+        </div>
+
+
+        <div class="home-recipes">
+
+
+            <!-- JOLLOF -->
+
+            <a
+                href="recipe.html?id=jollof-rice"
+                class="home-recipe-card">
+
+                <div class="home-food">
+                    🍚
+                </div>
+
+                <div class="home-recipe-info">
+
+                    <h3>
+                        Jollof Rice
+                    </h3>
+
+                    <p>
+                        🇳🇬 Nigerian • ⏱ 45 min
+                    </p>
+
+                    <span>
+                        Beginner
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- FRIED RICE -->
+
+            <a
+                href="recipe.html?id=fried-rice"
+                class="home-recipe-card">
+
+                <div class="home-food">
+                    🍚
+                </div>
+
+                <div class="home-recipe-info">
+
+                    <h3>
+                        Fried Rice
+                    </h3>
+
+                    <p>
+                        🍽️ Easy • ⏱ 35 min
+                    </p>
+
+                    <span>
+                        Beginner
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- CHICKEN -->
+
+            <a
+                href="recipe.html?id=spicy-chicken"
+                class="home-recipe-card">
+
+                <div class="home-food">
+                    🍗
+                </div>
+
+                <div class="home-recipe-info">
+
+                    <h3>
+                        Spicy Chicken
+                    </h3>
+
+                    <p>
+                        🌶️ Easy • ⏱ 35 min
+                    </p>
+
+                    <span>
+                        Easy
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- COOKING TIP -->
+
+    <section class="section">
+
+        <div class="home-tip">
+
+            <div class="tip-icon">
+                💡
+            </div>
+
+            <div>
+
+                <h3>
+                    Cooking Tip
+                </h3>
+
+                <p>
+                    Read the full recipe before you start
+                    cooking. It helps you prepare everything
+                    you need first.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOTTOM NAVIGATION -->
+
+    <nav class="bottom-nav">
+
+        <a
+            href="index.html"
+            class="active">
+
+            🏠
+
+            <span>
+                Home
+            </span>
+
         </a>
 
-    </footer>
+
+        <a href="recipes.html">
+
+            🍲
+
+            <span>
+                Recipes
+            </span>
+
+        </a>
 
 
-    <script src="js/script.js"></script>
+        <a href="favorites.html">
+
+            ❤️
+
+            <span>
+                Favorites
+            </span>
+
+        </a>
+
+
+        <a href="profile.html">
+
+            👤
+
+            <span>
+                Profile
+            </span>
+
+        </a>
+
+    </nav>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
 
 </body>
 

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CookWise - Recipe</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<header>
+
+    <a href="recipes.html" class="back-btn">
+        ←
+    </a>
+
+    <div class="logo">
+        🍳 CookWise
+    </div>
+
+    <!-- FAVORITE BUTTON -->
+    <button
+        type="button"
+        id="favoriteButton"
+        class="favorite-button"
+        aria-label="Add recipe to favorites">
+        ♡
+    </button>
+
+</header>
+
+
+<main>
+
+    <!-- RECIPE HERO -->
+
+    <section class="recipe-hero">
+
+        <div
+            id="recipeEmoji"
+            class="recipe-big-image">
+            🍳
+        </div>
+
+        <p id="recipeCountry">
+            Recipe
+        </p>
+
+        <h1 id="recipeTitle">
+            Loading Recipe...
+        </h1>
+
+        <p
+            id="recipeDescription"
+            class="recipe-description">
+            Loading recipe information...
+        </p>
+
+
+        <!-- RECIPE INFORMATION -->
+
+        <div class="recipe-meta">
+
+            <div>
+                <span>⏱️</span>
+
+                <strong id="recipeTime">
+                    --
+                </strong>
+
+                <small>
+                    Time
+                </small>
+            </div>
+
+
+            <div>
+                <span>⭐</span>
+
+                <strong id="recipeDifficulty">
+                    --
+                </strong>
+
+                <small>
+                    Difficulty
+                </small>
+            </div>
+
+
+            <div>
+                <span>👥</span>
+
+                <strong id="recipeServings">
+                    --
+                </strong>
+
+                <small>
+                    Servings
+                </small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INGREDIENTS -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>
+                🛒 Ingredients
+            </h2>
+
+        </div>
+
+        <div class="ingredients-card">
+
+            <ul id="ingredientsList">
+
+                <li>
+                    Loading ingredients...
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- COOKING STEPS -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>
+                👨‍🍳 Cooking Steps
+            </h2>
+
+        </div>
+
+        <div
+            id="stepsList"
+            class="steps-list">
+        </div>
+
+    </section>
+
+
+    <!-- COOKING TIP -->
+
+    <section class="section">
+
+        <div class="tip-card">
+
+            <div class="tip-icon">
+                💡
+            </div>
+
+            <div>
+
+                <h3>
+                    Cooking Tip
+                </h3>
+
+                <p id="recipeTip">
+                    Loading tip...
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINISH -->
+
+    <section class="section">
+
+        <button
+            type="button"
+            class="finish-button"
+            onclick="alert('🎉 Great job! Keep practicing your cooking skills!')">
+
+            🎉 I Finished Cooking
+
+        </button>
+
+    </section>
+
+</main>
+
+
+<!-- BOTTOM NAVIGATION -->
+
+<nav class="bottom-nav">
+
+    <a href="index.html">
+        🏠
+        <span>Home</span>
+    </a>
+
+    <a
+        href="recipes.html"
+        class="active">
+        🍲
+        <span>Recipes</span>
+    </a>
+
+    <a href="favorites.html">
+        ❤️
+        <span>Favorites</span>
+    </a>
+
+    <a href="profile.html">
+        👤
+        <span>Profile</span>
+    </a>
+
+</nav>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="./script.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const favoriteButton =
+        document.getElementById("favoriteButton");
+
+    if (favoriteButton) {
+
+        favoriteButton.addEventListener(
+            "click",
+            function () {
+
+                toggleFavorite();
+
+            }
+        );
+
+    }
+
+});
+
+</script>
+
+</body>
+
+</html>

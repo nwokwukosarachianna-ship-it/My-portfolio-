@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CookWise - Favorites</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <a href="index.html" class="back-btn">
+            ←
+        </a>
+
+        <div class="logo">
+            🍳 CookWise
+        </div>
+
+        <button
+            class="menu-btn"
+            onclick="showMessage()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- PAGE INTRO -->
+
+        <section class="section">
+
+            <h1>
+                ❤️ My Favorites
+            </h1>
+
+            <p class="page-description">
+                Your saved recipes are kept here so you
+                can easily find them again.
+            </p>
+
+        </section>
+
+
+        <!-- FAVORITES -->
+
+        <section class="section">
+
+            <div
+                id="favoritesList"
+                class="recipes">
+
+            </div>
+
+
+            <!-- EMPTY STATE -->
+
+            <div
+                id="emptyFavorites"
+                class="empty-favorites">
+
+                <div class="empty-icon">
+                    ❤️
+                </div>
+
+                <h2>
+                    No Favorites Yet
+                </h2>
+
+                <p>
+                    When you find a recipe you love,
+                    tap the heart button to save it here.
+                </p>
+
+                <a
+                    href="recipes.html"
+                    class="browse-btn">
+
+                    🍲 Browse Recipes
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- BOTTOM NAVIGATION -->
+
+    <nav class="bottom-nav">
+
+        <a href="index.html">
+
+            🏠
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+
+        <a href="recipes.html">
+
+            🍲
+
+            <span>
+                Recipes
+            </span>
+
+        </a>
+
+
+        <a
+            href="favorites.html"
+            class="active">
+
+            ❤️
+
+            <span>
+                Favorites
+            </span>
+
+        </a>
+
+
+        <a href="profile.html">
+
+            👤
+
+            <span>
+                Profile
+            </span>
+
+        </a>
+
+    </nav>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
